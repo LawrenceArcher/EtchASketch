@@ -7,10 +7,26 @@ let createGrid = () => {
 		var div = document.createElement("div");
 		div.classList.add("pixel");
 		container.appendChild(div);
-		console.log("run")
+		console.log("run");
 	}
-	div.addEventListener("click", () =>{
-		div.backgroundColor = black;
+	var div64 = document.querySelectorAll(".pixel");
+
+	div64.forEach((div)=>{
+		div.addEventListener("mouseover", (e) => {
+		e.target.style.backgroundColor = "black";
+		});
+	});
+	
+}
+document.querySelector("#reset").addEventListener("click", ()=>{
+	document.querySelector(".container").removeChild(".pixel");
+	createGrid();
+});
+let resetGrid = () =>{
+	var div64 = document.querySelectorAll(".pixel");
+	div64.forEach((div)=>{
+
+		div.style.backgroundColor = "white";
 	})
 }
 createGrid();

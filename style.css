@@ -1,11 +1,12 @@
 .container{
-	width: 450px;
+	width: 900px;
+	height:800px;
 	border:black 1px solid;
 }
 .pixel{
 	padding:10px;
 	border: 1px black solid;
-	width: 30px;
-	height: 30px;
+	width: 10%;
+	height: 8%;
 	display:inline-block;
 }
