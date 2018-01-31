@@ -19,7 +19,8 @@ let createGrid = () => {
 	
 }
 document.querySelector("#reset").addEventListener("click", ()=>{
-	document.querySelector(".container").removeChild(".pixel");
+	var trash = document.querySelectorAll(".pixel");
+	document.querySelector(".container").removeChild(trash);
 	createGrid();
 });
 let resetGrid = () =>{
