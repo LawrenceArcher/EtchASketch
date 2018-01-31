@@ -1,12 +1,17 @@
 .container{
-	width: 900px;
+	width: 800px;
 	height:800px;
 	border:black 1px solid;
+	margin:auto;
+	padding:0;
 }
 .pixel{
-	padding:10px;
-	border: 1px black solid;
-	width: 10%;
-	height: 8%;
 	display:inline-block;
+	margin-top:0;
+	margin-bottom:0;
+	padding:0;
+}
+.title, button{
+	text-align: center;
+	margin:auto;
 }

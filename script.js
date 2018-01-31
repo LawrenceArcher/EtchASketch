@@ -3,9 +3,11 @@ let createGrid = () => {
 	var container = document.querySelector(".container");
 	
 	
-	for (var i = 0; i < gridNumber;i++){
+	for (var i = 0; i < gridNumber*gridNumber;i++){
 		var div = document.createElement("div");
 		div.classList.add("pixel");
+		div.style.height = (800/gridNumber - 2).toString() + "px";
+		div.style.width = (800/gridNumber - 2).toString() + "px";
 		container.appendChild(div);
 		console.log("run");
 	}
