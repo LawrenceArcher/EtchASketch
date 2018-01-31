@@ -19,15 +19,6 @@ let createGrid = () => {
 	
 }
 document.querySelector("#reset").addEventListener("click", ()=>{
-	var trash = document.querySelectorAll(".pixel");
-	document.querySelector(".container").removeChild(trash);
-	createGrid();
+	location.reload();
 });
-let resetGrid = () =>{
-	var div64 = document.querySelectorAll(".pixel");
-	div64.forEach((div)=>{
-
-		div.style.backgroundColor = "white";
-	})
-}
 createGrid();
